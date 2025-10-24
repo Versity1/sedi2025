@@ -1,15 +1,10 @@
 //operators
-let vote = 0;
 
-function APGA(){
-    vote +=2
-    document.getElementById('apga').innerHTML=vote
+
+function forVote(apgaVote, apcVote){
+    apgaVote +=1
+    document.getElementById('apga').innerHTML=apgaVote
+    
 }
 
-// apc
-function APC(){
-    vote +=1
-    document.getElementById('apc').innerHTML=vote
-}
 
-// comparison operators
