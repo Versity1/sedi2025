@@ -1,9 +1,15 @@
-let username = prompt('Enter Username: ')
-let password = prompt('Enter password: ')
-username= username.trim()
-if(username === 'Ebuka' & password === '12345678'){
-    document.writeln(`welcome  ${username}`)
-}else{
-    document.writeln('Invalid username')
+//operators
+let vote = 0;
+
+function APGA(){
+    vote +=2
+    document.getElementById('apga').innerHTML=vote
 }
 
+// apc
+function APC(){
+    vote +=1
+    document.getElementById('apc').innerHTML=vote
+}
+
+// comparison operators

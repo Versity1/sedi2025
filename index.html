@@ -4,10 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    
+    <style>
+        .screen{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            border-style: solid;
+            padding: .7rem;
+            margin-bottom: 2rem;
+        }
+        .screen p{
+            color: black;
+        }
+        span{
+            color: red;
+        }
+        .btn{
+            display: flex;
+            justify-content: space-between;
+        }
+        button{
+            background-color: blue;
+            border-style: none;
+            padding: 12px 17px;
+            color: white;
+        }
+    </style>
 </head>
 <body>
-    <h1>Welcome to Javascript</h1>
+    <div class="screen">
+        <p>Votes casted for APGA:  <span id="apga">0</span>Votes</p>
+        <p>Votes casted for APC:  <span id="apc">0</span>Votes</p>
+    </div>
+    <div class="btn">
+        <button onclick="APGA()">APGA</button>
+        <button onclick="APC()">APC</button>
+    </div>
     <script src="js/main.js"></script>
 </body>
 </html>
